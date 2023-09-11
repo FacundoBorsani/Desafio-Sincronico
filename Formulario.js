@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById("registroForm");
 
-    formulario.addEventListener("submit", function (e) {
-        e.preventDefault(); // Evita que se envíe el formulario
+    formulario.addEventListener("submit", function () {
+        // Evita que se envíe el formulario
+        event.preventDefault();
 
         // Obtén los valores ingresados por el usuario
         const nombre = document.getElementById("nombreInput").value;
